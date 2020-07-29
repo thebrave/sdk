@@ -3072,6 +3072,7 @@ protected:
 
 #ifdef ENABLE_SYNC
         // sync status updates and events
+        void syncupdate_blocked_file(Sync& sync, const LocalPath& localPath) override;
         void syncupdate_filter_error(Sync* sync, LocalNode* node) override;
 
         /**
